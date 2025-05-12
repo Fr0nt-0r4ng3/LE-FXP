@@ -1,0 +1,128 @@
+{
+	"cb-fxp-hero-big-content": {
+		"prefix": "cb-fxp-hero-big-content",
+		"body": [
+			"<!-- cb-fxp-hero-big-content -->",
+			"        <label class='text-center w-100 titleSnipet'>cb-hero-001</label>",
+			"        <section class='cb-hero-001 position-relative'>",
+			"            <!-- Imagen de fondo que abarca todo el ancho -->",
+			"            <div class=\"hero-image-container\">",
+			"                <img src=\"https://fakeimg.pl/1920x900\"",
+			"                    alt=\"hero\" class=\"img-fluid w-100\" style=\"height: 900px; object-fit: cover;\">",
+			"            </div>",
+			"",
+			"            <!-- Contenido superpuesto centrado verticalmente -->",
+			"            <div class=\"container position-absolute top-0 start-0 end-0 h-100 d-flex align-items-center\">",
+			"                <div class=\"row justify-content-start w-100 padding-48\">",
+			"                    <div class=\"col-12 col-lg-6 text-start text-lg-start\">",
+			"                        <h1 class=\"color-cold\">Título H1</h1>",
+			"                        <h2 class=\"color-warm\">Título H2</h2>",
+			"                        <h3 class=\"color-neutral\">Título H3</h3>",
+			"                        <p class=\"color-grey\">Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>.",
+			"                            Sed",
+			"                            do",
+			"                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+			"                            nostrud",
+			"                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+			"                        <div>",
+			"                            <button class=\"btn btn-cold\">Click Here</button>",
+			"                        </div>",
+			"                    </div>",
+			"                </div>",
+			"            </div>",
+			"        </section>"
+		],
+		"description": "cb-fxp-hero-big-content"
+	},
+
+	"cb-fxp-hero-big-card": {
+		"prefix": "cb-fxp-hero-big-card",
+		"body": [
+			"<!-- cb-fxp-hero-big-card -->",
+			"        <label class='text-center w-100 titleSnipet'>cb-hero-002</label>",
+			"        <section class='cb-hero-002 position-relative'>",
+			"            <!-- Imagen de fondo que abarca todo el ancho -->",
+			"            <div class=\"hero-image-container\">",
+			"                <img src=\"https://fakeimg.pl/1920x900\"",
+			"                    alt=\"hero\" class=\"img-fluid w-100\" style=\"height: 900px; object-fit: cover;\">",
+			"            </div>",
+			"",
+			"            <!-- Contenido superpuesto centrado verticalmente -->",
+			"            <div class=\"container position-absolute top-0 start-0 end-0 h-100 d-flex align-items-center\">",
+			"",
+			"                <div class=\"row justify-content-start w-100 padding-48\">",
+			"                    <div class=\"col-12 col-lg-6 text-start text-lg-start\">",
+			"                        <div class=\"box bg-herobox bg-cold\">",
+			"                            <h1 class=\"color-cold\">Título H1</h1>",
+			"                            <h2 class=\"color-warm\">Título H2</h2>",
+			"                            <h3 class=\"color-neutral\">Título H3</h3>",
+			"                            <p class=\"color-white\">Lorem ipsum dolor sit amet, <strong>consectetur adipiscing",
+			"                                    elit</strong>.",
+			"                                Sed",
+			"                                do",
+			"                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+			"                                quis",
+			"                                nostrud",
+			"                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+			"                            <div>",
+			"                                <button class=\"btn btn-cold\">Click Here</button>",
+			"                            </div>",
+			"                        </div>",
+			"                    </div>",
+			"                </div>",
+			"",
+			"",
+			"            </div>",
+			"        </section>"
+		],
+		"description": "cb-fxp-hero-big-card"
+	},
+
+	"cb-fxp-hero-big": {
+		"prefix": "cb-fxp-hero-big",
+		"body": [
+			"<!-- cb-fxp-hero-big -->",
+			"        <label class='text-center w-100 titleSnipet'>cb-hero-003</label>",
+			"        <section class='cb-hero-003 position-relative'>",
+			"            <!-- Imagen de fondo que abarca todo el ancho -->",
+			"            <div class=\"hero-image-container\">",
+			"                <img src=\"https://fakeimg.pl/1920x900\"",
+			"                    alt=\"hero\" class=\"img-fluid w-100\" style=\"height: 900px; object-fit: cover;\">",
+			"            </div>            ",
+			"        </section>"
+		],
+		"description": "cb-fxp-hero-big"
+	},
+
+	"cb-fxp-hero-med": {
+		"prefix": "cb-fxp-hero-med",
+		"body": [
+			"<!-- cb-fxp-hero-med -->",
+			"        <label class='text-center w-100 titleSnipet'>cb-hero-004</label>",
+			"        <section class='cb-hero-004 position-relative'>",
+			"            <!-- Imagen de fondo que abarca todo el ancho -->",
+			"            <div class=\"hero-image-container\">",
+			"                <img src=\"https://fakeimg.pl/1920x640\"",
+			"                    alt=\"hero\" class=\"img-fluid w-100\" style=\"height: 640px; object-fit: cover;\">",
+			"            </div>            ",
+			"        </section>"
+		],
+		"description": "cb-fxp-hero-med"
+	},
+
+	"cb-fxp-hero-small": {
+		"prefix": "cb-fxp-hero-small",
+		"body": [
+			"<!-- cb-fxp-hero-small -->",
+			"        <label class='text-center w-100 titleSnipet'>cb-hero-005</label>",
+			"        <section class='cb-hero-005 position-relative'>",
+			"            <!-- Imagen de fondo que abarca todo el ancho -->",
+			"            <div class=\"hero-image-container\">",
+			"                <img src=\"https://fakeimg.pl/1920x390\"",
+			"                    alt=\"hero\" class=\"img-fluid w-100\" style=\"height: 390px; object-fit: cover;\">",
+			"            </div>            ",
+			"        </section>"
+		],
+		"description": "cb-fxp-hero-small"
+	}
+}

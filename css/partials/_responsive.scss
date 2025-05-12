@@ -1,0 +1,52 @@
+/* extra Small Devices*/
+@mixin movil0 {
+    @media only screen and (min-width: 0px) {
+        @content;
+    }
+}
+
+/*Small Devices*/
+@mixin movil575 {
+    @media only screen and (min-width: 575px) {
+        @content;
+    }
+}
+
+@mixin movil650 {
+    @media only screen and (min-width: 650px) {
+        @content;
+    }
+}
+
+/*Medium devices*/
+@mixin movil767 {
+    @media only screen and (min-width: 767px) {
+        @content;
+    }
+}
+
+/*Large Devices*/
+@mixin movil991 {
+    @media only screen and (min-width:991px) {
+        @content;
+    }
+}
+
+@mixin movil1200 {
+    @media only screen and (min-width:1200px) {
+        @content;
+    }
+}
+
+@mixin movil1280 {
+    @media only screen and (min-width:1280px) {
+        @content;
+    }
+}
+
+@mixin movil1367 {
+    @media only screen and (min-width:1367px) {
+        @content;
+    }
+}
+

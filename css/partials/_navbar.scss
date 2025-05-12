@@ -1,0 +1,136 @@
+/* NAVBAR PRINCIPAL */
+
+.navbar {
+  padding: 1rem 0;
+  
+  .logo {
+    max-width: clamp(7.97rem, 5.14rem + 4.57vw, 10.63rem);
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    transition: all 0.3s ease;
+    
+    @media (min-width: 992px) {
+      max-height: 100px;
+    }
+  }
+  
+  p {
+    font-size: clamp(1rem, 0.8667rem + 0.2153vw, 1.125rem);
+    line-height: clamp(1.125rem, 0.8583rem + 0.4306vw, 1.375rem);
+  }
+}
+
+/* LISTA DE NAVEGACIÓN */
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 1rem;
+  
+  li {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+  
+  a {
+    position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 8px;
+    transition: color 0.3s ease;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      margin: auto auto 0;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+    }
+    
+    &:hover,
+    &:focus,
+    &:active {
+      color: $neutral-4;
+      
+      &::before {
+        background-color: $neutral-2;
+      }
+    }
+  }
+  
+  /* Versión móvil */
+  @media (max-width: 991.98px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    
+    li {
+      width: 100%;
+    }
+    
+    a {
+      display: block;
+      padding: 0.5rem 0;
+    }
+  }
+}
+
+/* BOTÓN HAMBURGUESA */
+.navbar-toggler {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.cb-navbar-004 .navbar-toggler-icon, .cb-navbar-005 .navbar-toggler-icon, .cb-navbar-006 .navbar-toggler-icon, .cb-navbar-007 .navbar-toggler-icon {
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* CONTENIDO DEL MENÚ MÓVIL */
+
+.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+  @media (max-width: 991.98px) {
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* BOTÓN CTA */
+
+.navbar-collapse .btn-warm, .btn-cold, .btn-neutral {
+  @media (max-width: 991.98px) {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

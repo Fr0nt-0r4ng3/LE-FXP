@@ -1,0 +1,49 @@
+.full-width-header {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+}
+
+.typewriter {
+    overflow: hidden; /* Oculta el texto inicialmente */
+    border-right: .15em solid white; /* Cursor de máquina de escribir */
+    white-space: nowrap; /* Evita saltos de línea */
+    margin: 0 auto; /* Centra el texto */
+    letter-spacing: .15em; /* Espaciado entre letras */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* Animación de escritura */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Animación del cursor */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
+.cb-thankyou-002 h1 {
+    font-size: clamp(2rem, -0.039rem + 5.674vw, 4.5rem);
+    line-height: clamp(2.125rem, 0.086rem + 5.674vw, 4.625rem);
+    font-weight: 900;
+}
+
+.accent {
+    @include movil0 {
+        max-width: 100px;
+
+    }
+
+    @include movil767 {
+        max-width: 200px;
+    }
+}

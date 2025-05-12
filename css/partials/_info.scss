@@ -1,0 +1,38 @@
+  .cb-info-003 {
+
+    /* Vertical Line Style */
+  .vr-custom {
+    width: 3px;
+    background-color: #28a745;
+    opacity: 1;
+    margin: 0 auto;
+    
+
+    @include movil0 {
+      height: 90%;
+    }
+  
+    @include movil767 {
+      height: 60%;
+    }
+  }
+
+  .step-number {
+    max-width: 150px;
+    @include movil0 {
+
+
+  }
+
+  @include movil767 {
+  }
+  }
+
+  .step img {
+    margin: 0 auto;
+    max-width: 250px;
+  }
+
+  }
+  
+  

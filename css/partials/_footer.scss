@@ -1,0 +1,59 @@
+footer {
+    padding: 40px 0;
+
+    p {
+        font-size: clamp(1rem, 0.8667rem + 0.2153vw, 1.125rem);
+        line-height: clamp(1.125rem, 0.8583rem + 0.4306vw, 1.375rem);
+    }
+
+    ul li:hover {
+        top: 0;
+    }
+
+    .logo {
+        height: auto;
+    }
+    
+     /* Estilos para los círculos de redes sociales */
+     .social-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $neutral-4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .social-circle:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .circle-link {
+        color: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .circle-link i {
+        font-size: 1rem;
+    }
+
+    /* Ajuste para pantallas pequeñas */
+    @media (max-width: 576px) {
+        .social-circle {
+            width: 36px;
+            height: 36px;
+        }
+        .circle-link i {
+            font-size: 0.9rem;
+        }
+    }
+}

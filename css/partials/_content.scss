@@ -1,0 +1,20 @@
+section[class^="cb-content"] {
+
+    .brand {        
+        @include movil0 {
+            max-width: 100px;
+            
+        }
+        @include movil767 {
+            max-width: 150px;
+            }
+        }
+
+        .smallbox {        
+            padding: 24px;
+            border-radius: 12px;
+            }
+    
+
+
+}

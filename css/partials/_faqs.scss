@@ -1,0 +1,117 @@
+/* Estilos base del FAQ */
+
+.faq-item {
+    background-color: $black;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Estado hover */
+.faq-item:hover {
+    background-color: $black;
+}
+
+/* Estado activo (abierto) */
+.faq-item.active {
+    background-color: $black;
+}
+
+/* Contenido de la respuesta */
+.faq-answer {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-5px);
+    transition: 
+      max-height 0.5s ease-out,
+      opacity 0.4s ease,
+      transform 0.4s ease;
+    padding: 0 1rem;
+  }
+
+/* Icono */
+.faq-icon {
+    font-size: 1.5rem;
+    width: 20px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+/* Cuando está activo */
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+    padding: 1rem;
+    margin: 0 24px;
+  }
+
+/* Icono usando solo pseudo-elementos */
+.faq-icon::before {
+    content: '+';
+}
+
+.faq-item.active .faq-icon::before {
+    content: '-';
+}
+
+.cb-faqs-001 {
+    .faq-item h3 {
+        font-size: 1.2rem;
+        padding: 12px;
+        background-color: $warm-2;
+        border-radius: 12px;
+    }
+
+    .faq-item.active h3 {
+        font-size: 1.2rem;
+        padding: 12px;
+        background-color: $warm-3;
+        border-radius: 12px;
+    }
+
+    .faq-answer {
+        border-left: 1px solid $warm-3;
+    }
+}
+
+.cb-faqs-002 {
+    .faq-item h3 {
+        font-size: 1.2rem;
+        padding: 12px;
+        background-color: $cold-3;
+        border-radius: 12px;
+    }
+
+    .faq-item.active h3 {
+        font-size: 1.2rem;
+        padding: 12px;
+        background-color: $cold-5;
+        border-radius: 12px;
+    }
+
+    .faq-answer {
+        border-left: 1px solid $cold-5;
+    }
+}
+
+.cb-faqs-003 {
+    .faq-item h3 {
+        font-size: 1.2rem;
+        padding: 12px;
+        background-color: $neutral-2;
+        border-radius: 12px;
+    }
+
+    .faq-item.active h3 {
+        font-size: 1.2rem;
+        padding: 12px;
+        background-color: $neutral-3;
+        border-radius: 12px;
+    }
+
+    .faq-answer {
+        border-left: 1px solid $neutral-4;
+    }
+}

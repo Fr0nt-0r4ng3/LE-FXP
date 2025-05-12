@@ -1,0 +1,52 @@
+.cb-hero-001, .cb-hero-002, .cb-hero-003 {
+    height: 100vh; /* Altura completa del viewport */
+    max-height: 900px; /* Máximo igual a la altura de tu imagen */
+    overflow: hidden;
+    position: relative;
+}
+
+.cb-hero-004 {
+    height: 100vh; /* Altura completa del viewport */
+    max-height: 640px; /* Máximo igual a la altura de tu imagen */
+    overflow: hidden;
+    position: relative;
+}
+
+.cb-hero-005 {
+    height: 100vh; /* Altura completa del viewport */
+    max-height: 390px; /* Máximo igual a la altura de tu imagen */
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .cb-hero-001, .cb-hero-002, .cb-hero-003, .cb-hero-004, .cb-hero-005 {
+        height: auto;
+        max-height: none;
+    }
+    
+    .container.position-absolute {
+        position: static !important;
+        padding: 2rem 0;
+    }
+    
+    .hero-image-container img {
+        height: auto;
+        max-height: 50vh;
+    }
+}
+
+.bg-herobox {
+    background-color: rgba(7, 21, 46, 0.7);
+}
