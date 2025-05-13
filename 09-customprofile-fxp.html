@@ -45,13 +45,9 @@
 
     <!-- CSS LANDING ESSENTIALS  / FXP -->
     <link rel='stylesheet' href='https://le-fxp.netlify.app/css/style.css'>
-
 </head>
 
-cb-fxp
-
 <body>
-
     <div class='container-fluid noPadding'>
         <!-- Content -->
 
@@ -76,7 +72,12 @@ cb-fxp
                                     <div class="col-md-6 col-12">
                                         <div class="mb-3">
                                             <label for="firstName" class="form-label">Nombre</label>
-                                            <input type="text" class="form-control" id="firstName" placeholder="Ej: Juan" required>
+                                            <input type="text" class="form-control" id="firstName"
+                                                placeholder="Ej: Juan" required>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -84,7 +85,12 @@ cb-fxp
                                     <div class="col-md-6 col-12">
                                         <div class="mb-3">
                                             <label for="lastName" class="form-label">Apellido</label>
-                                            <input type="text" class="form-control" id="lastName" placeholder="Ej: Pérez" required>
+                                            <input type="text" class="form-control" id="lastName"
+                                                placeholder="Ej: Pérez" required>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -92,7 +98,12 @@ cb-fxp
                                     <div class="col-md-6 col-12">
                                         <div class="mb-3">
                                             <label for="email" class="form-label">Correo electrónico</label>
-                                            <input type="email" class="form-control" id="email" placeholder="Ej: juan.perez@ejemplo.com" required>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Ej: juan.perez@ejemplo.com" required>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -100,7 +111,12 @@ cb-fxp
                                     <div class="col-md-6 col-12">
                                         <div class="mb-3">
                                             <label for="phone" class="form-label">Teléfono</label>
-                                            <input type="tel" class="form-control" id="phone"placeholder="Ej: 555-123-4567">
+                                            <input type="tel" class="form-control" id="phone"
+                                                placeholder="Ej: 555-123-4567">
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -109,13 +125,18 @@ cb-fxp
                                         <div class="mb-3">
                                             <label for="birthDate" class="form-label">Fecha de Nacimiento</label>
                                             <input type="date" class="form-control" id="birthDate">
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
                                     <!-- Género -->
                                     <div class="col-md-6 col-12">
                                         <div class="mb-3">
-                                            <label for="gender" class="form-label" placeholder="DD/MM/YYYY">Género</label>
+                                            <label for="gender" class="form-label"
+                                                placeholder="DD/MM/YYYY">Género</label>
                                             <select class="form-select" id="gender">
                                                 <option selected disabled>Seleccione...</option>
                                                 <option value="male">Masculino</option>
@@ -123,6 +144,10 @@ cb-fxp
                                                 <option value="other">Otro</option>
                                                 <option value="prefer-not-to-say">Prefiero no decir</option>
                                             </select>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -139,6 +164,10 @@ cb-fxp
                                                 <input class="form-check-input" type="radio" name="terms" id="termsNo"
                                                     value="no">
                                                 <label class="form-check-label" for="termsNo">No</label>
+                                            </div>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
                                             </div>
                                         </div>
                                     </div>
@@ -159,14 +188,20 @@ cb-fxp
                                                 <label class="form-check-label" for="preference2">Recibir
                                                     ofertas</label>
                                             </div>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
                                     <!-- Submit Button -->
                                     <div class="mb-3 form-check form-switch col-12 justify-content-center">
-                                        <input class="form-check-input" type="checkbox" id="newsletterSwitch" style="width: 3em; height: 1.5em;">
-                                        <label class="form-check-label" for="newsletterSwitch">¿Desea recibir nuestro newsletter?</label>
-                                      </div>
+                                        <input class="form-check-input" type="checkbox" id="newsletterSwitch"
+                                            style="width: 3em; height: 1.5em;">
+                                        <label class="form-check-label" for="newsletterSwitch">¿Desea recibir nuestro
+                                            newsletter?</label>
+                                    </div>
 
                                     <!-- Submit Button -->
                                     <div class="d-grid gap-2 col-12 justify-content-center">
@@ -207,7 +242,12 @@ cb-fxp
                                     <div class="col-md-6 col-12">
                                         <div class="mb-3">
                                             <label for="firstName" class="form-label">Nombre</label>
-                                            <input type="text" class="form-control" id="firstName" placeholder="Ej: Juan" required>
+                                            <input type="text" class="form-control" id="firstName"
+                                                placeholder="Ej: Juan" required>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -215,7 +255,12 @@ cb-fxp
                                     <div class="col-md-6 col-12">
                                         <div class="mb-3">
                                             <label for="lastName" class="form-label">Apellido</label>
-                                            <input type="text" class="form-control" id="lastName" placeholder="Ej: Pérez" required>
+                                            <input type="text" class="form-control" id="lastName"
+                                                placeholder="Ej: Pérez" required>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -223,7 +268,12 @@ cb-fxp
                                     <div class="col-md-6 col-12">
                                         <div class="mb-3">
                                             <label for="email" class="form-label">Correo electrónico</label>
-                                            <input type="email" class="form-control" id="email" placeholder="Ej: juan.perez@ejemplo.com" required>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Ej: juan.perez@ejemplo.com" required>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -231,7 +281,12 @@ cb-fxp
                                     <div class="col-md-6 col-12">
                                         <div class="mb-3">
                                             <label for="phone" class="form-label">Teléfono</label>
-                                            <input type="tel" class="form-control" id="phone"placeholder="Ej: 555-123-4567">
+                                            <input type="tel" class="form-control" id="phone"
+                                                placeholder="Ej: 555-123-4567">
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -240,13 +295,18 @@ cb-fxp
                                         <div class="mb-3">
                                             <label for="birthDate" class="form-label">Fecha de Nacimiento</label>
                                             <input type="date" class="form-control" id="birthDate">
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
                                     <!-- Género -->
                                     <div class="col-md-6 col-12">
                                         <div class="mb-3">
-                                            <label for="gender" class="form-label" placeholder="DD/MM/YYYY">Género</label>
+                                            <label for="gender" class="form-label"
+                                                placeholder="DD/MM/YYYY">Género</label>
                                             <select class="form-select" id="gender">
                                                 <option selected disabled>Seleccione...</option>
                                                 <option value="male">Masculino</option>
@@ -254,6 +314,10 @@ cb-fxp
                                                 <option value="other">Otro</option>
                                                 <option value="prefer-not-to-say">Prefiero no decir</option>
                                             </select>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -270,6 +334,10 @@ cb-fxp
                                                 <input class="form-check-input" type="radio" name="terms" id="termsNo"
                                                     value="no">
                                                 <label class="form-check-label" for="termsNo">No</label>
+                                            </div>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
                                             </div>
                                         </div>
                                     </div>
@@ -290,14 +358,20 @@ cb-fxp
                                                 <label class="form-check-label" for="preference2">Recibir
                                                     ofertas</label>
                                             </div>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
                                     <!-- Submit Button -->
                                     <div class="mb-3 form-check form-switch col-12 justify-content-center">
-                                        <input class="form-check-input" type="checkbox" id="newsletterSwitch" style="width: 3em; height: 1.5em;">
-                                        <label class="form-check-label" for="newsletterSwitch">¿Desea recibir nuestro newsletter?</label>
-                                      </div>
+                                        <input class="form-check-input" type="checkbox" id="newsletterSwitch"
+                                            style="width: 3em; height: 1.5em;">
+                                        <label class="form-check-label" for="newsletterSwitch">¿Desea recibir nuestro
+                                            newsletter?</label>
+                                    </div>
 
                                     <!-- Submit Button -->
                                     <div class="d-grid gap-2 col-12 justify-content-center">
@@ -341,7 +415,12 @@ cb-fxp
                                     <div class="col-12">
                                         <div class="mb-3">
                                             <label for="firstName" class="form-label">Nombre</label>
-                                            <input type="text" class="form-control" id="firstName" placeholder="Ej: Juan" required>
+                                            <input type="text" class="form-control" id="firstName"
+                                                placeholder="Ej: Juan" required>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -349,7 +428,12 @@ cb-fxp
                                     <div class="col-12">
                                         <div class="mb-3">
                                             <label for="lastName" class="form-label">Apellido</label>
-                                            <input type="text" class="form-control" id="lastName" placeholder="Ej: Pérez" required>
+                                            <input type="text" class="form-control" id="lastName"
+                                                placeholder="Ej: Pérez" required>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -357,7 +441,12 @@ cb-fxp
                                     <div class="col-12">
                                         <div class="mb-3">
                                             <label for="email" class="form-label">Correo electrónico</label>
-                                            <input type="email" class="form-control" id="email" placeholder="Ej: juan.perez@ejemplo.com" required>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Ej: juan.perez@ejemplo.com" required>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -365,7 +454,12 @@ cb-fxp
                                     <div class="col-12">
                                         <div class="mb-3">
                                             <label for="phone" class="form-label">Teléfono</label>
-                                            <input type="tel" class="form-control" id="phone"placeholder="Ej: 555-123-4567">
+                                            <input type="tel" class="form-control" id="phone"
+                                                placeholder="Ej: 555-123-4567">
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -374,13 +468,18 @@ cb-fxp
                                         <div class="mb-3">
                                             <label for="birthDate" class="form-label">Fecha de Nacimiento</label>
                                             <input type="date" class="form-control" id="birthDate">
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
                                     <!-- Género -->
                                     <div class="col-12">
                                         <div class="mb-3">
-                                            <label for="gender" class="form-label" placeholder="DD/MM/YYYY">Género</label>
+                                            <label for="gender" class="form-label"
+                                                placeholder="DD/MM/YYYY">Género</label>
                                             <select class="form-select" id="gender">
                                                 <option selected disabled>Seleccione...</option>
                                                 <option value="male">Masculino</option>
@@ -388,6 +487,10 @@ cb-fxp
                                                 <option value="other">Otro</option>
                                                 <option value="prefer-not-to-say">Prefiero no decir</option>
                                             </select>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
@@ -404,6 +507,10 @@ cb-fxp
                                                 <input class="form-check-input" type="radio" name="terms" id="termsNo"
                                                     value="no">
                                                 <label class="form-check-label" for="termsNo">No</label>
+                                            </div>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
                                             </div>
                                         </div>
                                     </div>
@@ -424,14 +531,20 @@ cb-fxp
                                                 <label class="form-check-label" for="preference2">Recibir
                                                     ofertas</label>
                                             </div>
+                                            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                                                Por favor, complete todos los campos obligatorios antes de enviar el
+                                                formulario.
+                                            </div>
                                         </div>
                                     </div>
 
                                     <!-- Submit Button -->
                                     <div class="mb-3 form-check form-switch col-12 justify-content-center">
-                                        <input class="form-check-input" type="checkbox" id="newsletterSwitch" style="width: 3em; height: 1.5em;">
-                                        <label class="form-check-label" for="newsletterSwitch">¿Desea recibir nuestro newsletter?</label>
-                                      </div>
+                                        <input class="form-check-input" type="checkbox" id="newsletterSwitch"
+                                            style="width: 3em; height: 1.5em;">
+                                        <label class="form-check-label" for="newsletterSwitch">¿Desea recibir nuestro
+                                            newsletter?</label>
+                                    </div>
 
                                     <!-- Submit Button -->
                                     <div class="d-grid gap-2 col-12 justify-content-center">
@@ -458,7 +571,7 @@ cb-fxp
         integrity='sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2'
         crossorigin='anonymous'></script>
 
-        <script src='https://le-fxp.netlify.app/fxp-script.js'></script>
+    <script src='https://le-fxp.netlify.app/fxp-script.js'></script>
 
 </body>
 
